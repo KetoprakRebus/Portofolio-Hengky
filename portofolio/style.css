@@ -1,0 +1,341 @@
+/* ========================
+   Global Styles
+======================== */
+:root {
+  --bg: #f5f7fa;
+  --card: #ffffff;
+  --text: #333;
+  --muted: #777;
+  --accent: #6a5acd;
+}
+
+body.dark {
+  --bg: #1e1e2e;
+  --card: #2a2a3c;
+  --text: #eee;
+  --muted: #aaa;
+  --accent: #00c6ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ========================
+   Sidebar
+======================== */
+.sidebar {
+  width: 260px;
+  background: linear-gradient(180deg, var(--accent), #4e3cc8);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 15px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 20px 20px 0;
+  box-shadow: 5px 0 15px rgba(0,0,0,0.2);
+
+  /* 🔥 Tambahan scroll */
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.6) transparent;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.6);
+  border-radius: 3px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Profile */
+.profile {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.profile img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.profile h1 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.profile .role {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+/* Biodata di sidebar */
+.biodata {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  width: 100%;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.biodata p {
+  margin: 4px 0;
+  color: #fff;
+}
+
+.biodata strong {
+  color: #ffe600;
+}
+
+/* Navigasi */
+.sidebar nav ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 12px 15px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.sidebar nav ul li.active a,
+.sidebar nav ul li a:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateX(5px);
+}
+
+/* Footer sidebar */
+.sidebar-footer {
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.sidebar-footer .toggle-theme {
+  background: #fff;
+  color: var(--accent);
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.sidebar-footer .toggle-theme:hover {
+  opacity: 0.85;
+}
+
+/* ========================
+   Main Content
+======================== */
+.main {
+  margin-left: 270px;
+  padding: 30px;
+  flex: 1;
+}
+
+.card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+h2, h3 {
+  color: var(--accent);
+  margin-bottom: 15px;
+}
+
+/* Hero */
+.hero .badges {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background: var(--accent);
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+/* ========================
+   Skills Section
+======================== */
+.skills-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.skill-card {
+  background: linear-gradient(145deg, #fff, #f0f0f0);
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  transition: transform .3s;
+}
+
+body.dark .skill-card {
+  background: linear-gradient(145deg, #2a2a2a, #1f1f1f);
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.skill-info .icon {
+  font-size: 20px;
+}
+
+.progress {
+  height: 10px;
+  background: #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+body.dark .progress {
+  background: #444;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0;
+  border-radius: 6px;
+  background: linear-gradient(90deg, var(--accent), #00c6ff);
+  transition: width 1.5s ease;
+}
+
+.skill-card .percent {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--muted);
+  text-align: right;
+}
+
+/* ========================
+   Projects
+======================== */
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.filters button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filters button:hover,
+.filters button.active {
+  background: #4e3cc8;
+}
+
+.projects {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.project {
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  transition: transform .3s;
+}
+
+body.dark .project {
+  background: linear-gradient(145deg, #2a2a2a, #1f1f1f);
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+/* ========================
+   Contact Form
+======================== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background: var(--bg);
+  color: var(--text);
+}
+
+button[type="submit"] {
+  background: var(--accent);
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+  opacity: 0.85;
+}
