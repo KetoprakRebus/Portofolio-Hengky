@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio — Hengky Kurniawan</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  
+  <!-- Interactive Libraries -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Mobile Header (Visible only on small screens) -->
+  <header class="mobile-header">
+    <div class="mobile-logo">HK.</div>
+    <button class="mobile-menu-btn" id="mobile-menu-btn">
+      <i class="ph ph-list"></i>
+    </button>
+  </header>
+
+  <div class="wrap">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="profile">
+        <div class="profile-img-container">
+          <img src="img/WhatsApp Image 2025-09-20 at 08.57.59_0c861d0e.jpg" alt="Profile Hengky Kurniawan">
+        </div>
+        <h1>Hengky Kurniawan</h1>
+        <p class="role">Web Developer</p>
+      </div>
+
+      <div class="biodata">
+        <div class="bio-item">
+          <i class="ph-fill ph-map-pin"></i>
+          <div>
+            <span>Lokasi</span>
+            <p>Lampung, Indonesia</p>
+          </div>
+        </div>
+        <div class="bio-item">
+          <i class="ph-fill ph-graduation-cap"></i>
+          <div>
+            <span>Pendidikan</span>
+            <p>S1 Informatika</p>
+          </div>
+        </div>
+        <div class="bio-item">
+          <i class="ph-fill ph-envelope-simple"></i>
+          <div>
+            <span>Email</span>
+            <p>hengkykurniawan219@gmail.com</p>
+          </div>
+        </div>
+        <div class="bio-item">
+          <i class="ph-fill ph-phone"></i>
+          <div>
+            <span>Telepon</span>
+            <p>+62 819-9413-9915</p>
+          </div>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#about" class="nav-link active"><i class="ph ph-house"></i> Dashboard</a></li>
+          <li><a href="#skills" class="nav-link"><i class="ph ph-lightning"></i> Skills</a></li>
+          <li><a href="#projects" class="nav-link"><i class="ph ph-folder-open"></i> Projects</a></li>
+          <li><a href="#experience" class="nav-link"><i class="ph ph-briefcase"></i> Experience</a></li>
+          <li><a href="#services" class="nav-link"><i class="ph ph-wrench"></i> Services</a></li>
+          <li><a href="#certificates" class="nav-link"><i class="ph ph-certificate"></i> Sertifikat</a></li>
+          <li><a href="#contact" class="nav-link"><i class="ph ph-paper-plane-tilt"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-footer">
+        <button class="toggle-theme" id="toggle-theme" aria-label="Toggle Dark Mode">
+          <i class="ph-fill ph-moon"></i>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <section class="hero section-padding" id="about">
+        <div class="hero-content">
+          <h2 class="animate-on-scroll">Halo, Gue <span class="highlight">Hengky Kurniawan</span></h2>
+          <h3 class="animate-on-scroll" style="animation-delay: 0.1s">> <span id="typed-text"></span><span class="cursor"></span></h3>
+          <p class="animate-on-scroll" style="animation-delay: 0.2s">Portofolio ini bukan sekadar kumpulan karya, tapi sebuah perjalanan.</p>
+          <p class="animate-on-scroll" style="animation-delay: 0.3s">Setiap proyek yang Gue kerjakan adalah jejak dari ide, kreativitas, dan dedikasi yang Gue tuangkan untuk menciptakan sesuatu yang bernilai.</p>
+          <p class="animate-on-scroll" style="animation-delay: 0.4s">Gue percaya bahwa sebuah karya tidak hanya dilihat dari hasil akhirnya, tetapi juga dari proses, tantangan, dan inovasi yang lahir di dalamnya. Melalui halaman ini, Gue ingin mengajak Kalian untuk mengenal lebih jauh siapa Gue, bagaimana Gue bekerja, dan bagaimana Gue terus berkembang.</p>
+          
+          <div class="badges animate-on-scroll" style="animation-delay: 0.5s">
+            <span class="badge"><i class="ph ph-atom"></i> React</span>
+            <span class="badge"><i class="ph ph-file-code"></i> HTML/CSS</span>
+            <span class="badge"><i class="ph ph-code"></i> JavaScript</span>
+            <span class="badge"><i class="ph ph-figma-logo"></i> Figma</span>
+          </div>
+          
+          <div class="hero-actions animate-on-scroll" style="animation-delay: 0.6s">
+            <a href="#contact" class="btn btn-primary">Hire Me</a>
+            <a href="#projects" class="btn btn-secondary">View Work</a>
+          </div>
+        </div>
+        
+        <div class="hero-visual animate-on-scroll">
+          <div class="brutal-bg"></div>
+          <img src="img/WhatsApp Image 2025-09-20 at 08.57.59_0c861d0e.jpg" alt="Hengky Kurniawan" class="hero-img">
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section-padding" id="skills">
+        <div class="section-header">
+          <h2>My Skills</h2>
+          <p>Keahlian teknis dan desain yang saya kuasai</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card animate-on-scroll">
+            <div class="skill-info"><i class="ph-fill ph-code icon" style="color:#FF2D20"></i><strong>Laravel</strong></div>
+            <div class="progress"><div class="progress-fill" data-percent="90"></div></div>
+            <span class="percent">90%</span>
+          </div>
+          <div class="skill-card animate-on-scroll" style="animation-delay: 0.1s">
+            <div class="skill-info"><i class="ph-fill ph-file-html icon" style="color:#E44D26"></i><strong>HTML & CSS</strong></div>
+            <div class="progress"><div class="progress-fill" data-percent="95"></div></div>
+            <span class="percent">95%</span>
+          </div>
+          <div class="skill-card animate-on-scroll" style="animation-delay: 0.2s">
+            <div class="skill-info"><i class="ph-fill ph-paint-brush-broad icon" style="color:#A259FF"></i><strong>UI/UX</strong></div>
+            <div class="progress"><div class="progress-fill" data-percent="85"></div></div>
+            <span class="percent">85%</span>
+          </div>
+          <div class="skill-card animate-on-scroll" style="animation-delay: 0.3s">
+            <div class="skill-info"><i class="ph-fill ph-cpu icon" style="color:#00B4AB"></i><strong>IoT</strong></div>
+            <div class="progress"><div class="progress-fill" data-percent="80"></div></div>
+            <span class="percent">80%</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="section-padding" id="projects">
+        <div class="section-header">
+          <h2>Featured Projects</h2>
+          <p>Beberapa karya terbaik yang pernah saya buat</p>
+        </div>
+        
+        <div class="filters animate-on-scroll">
+          <button data-filter="all" class="filter-btn active">All</button>
+          <button data-filter="web" class="filter-btn">Web</button>
+          <button data-filter="app" class="filter-btn">App</button>
+          <button data-filter="design" class="filter-btn">Design</button>
+        </div>
+        
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card web animate-on-scroll" data-category="web">
+            <div class="project-img placeholder-gradient-1">
+               <i class="ph ph-users-three"></i>
+            </div>
+            <div class="project-content">
+              <span class="project-tag">Web Development</span>
+              <h4>Sistem Pengaduan Masyarakat</h4>
+              <p>Aplikasi berbasis web untuk pelaporan masalah masyarakat, dibangun menggunakan framework Laravel.</p>
+              <a href="#" class="project-link">View Project <i class="ph ph-arrow-right"></i></a>
+            </div>
+          </div>
+          
+          <!-- Project 2 -->
+          <div class="project-card app animate-on-scroll" data-category="app" style="animation-delay: 0.1s">
+            <div class="project-img" style="padding: 0; background: none;">
+              <img src="img/pinai.png" alt="FinAI Dashboard" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="project-content">
+              <span class="project-tag">Application</span>
+              <h4>FinAI (Financial AI)</h4>
+              <p>Aplikasi kecerdasan buatan untuk analisis dan manajemen keuangan yang cerdas.</p>
+              <a href="https://uang-uang-uang.vercel.app/" target="_blank" class="project-link">View Project <i class="ph ph-arrow-right"></i></a>
+            </div>
+          </div>
+          
+          <!-- Project 3 -->
+          <div class="project-card web animate-on-scroll" data-category="web" style="animation-delay: 0.2s">
+            <div class="project-img placeholder-gradient-3">
+              <img src="img/smartcity.png" alt="Smart City" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="project-content">
+              <span class="project-tag">Web Development</span>
+              <h4>Smart City</h4>
+              <p>Platform integrasi data perkotaan pintar untuk meningkatkan efisiensi layanan publik.</p>
+              <a href="https://smart-city-lampung.vercel.app/" class="project-link">View Project <i class="ph ph-arrow-right"></i></a>
+            </div>
+          </div>
+          
+          <!-- Project 4 -->
+          <div class="project-card web animate-on-scroll" data-category="web" style="animation-delay: 0.3s">
+            <div class="project-img placeholder-gradient-4">
+              <img src="img/sekolah.png" alt="Portal Sekolah" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="project-content">
+              <span class="project-tag">Web Development</span>
+              <h4>Portal Sekolah</h4>
+              <p>Sistem informasi akademik dan manajemen sekolah yang terpusat.</p>
+              <a href="https://website-bootstrap-d975.vercel.app/" class="project-link">View Project <i class="ph ph-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="project-card web animate-on-scroll" data-category="web">
+            <div class="project-img placeholder-gradient-1">
+              <i class="ph ph-books"></i>
+            </div>
+            <div class="project-content">
+              <span class="project-tag">Web Development</span>
+              <h4>OJS Jurnal</h4>
+              <p>Sistem manajemen publikasi jurnal ilmiah menggunakan platform Open Journal Systems.</p>
+              <a href="#" class="project-link">View Project <i class="ph ph-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="project-card app animate-on-scroll" data-category="app" style="animation-delay: 0.1s">
+            <div class="project-img placeholder-gradient-2">
+              <i class="ph ph-cpu"></i>
+            </div>
+            <div class="project-content">
+              <span class="project-tag">IoT & Hardware</span>
+              <h4>Embedded System</h4>
+              <p>Proyek pengembangan sistem tertanam (embedded system) untuk kontrol perangkat otomatis.</p>
+              <a href="#" class="project-link">View Project <i class="ph ph-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Project 7 -->
+          <div class="project-card design animate-on-scroll" data-category="design" style="animation-delay: 0.2s">
+            <div class="project-img placeholder-gradient-3">
+              <i class="ph ph-graduation-cap"></i>
+            </div>
+            <div class="project-content">
+              <span class="project-tag">UI/UX Design</span>
+              <h4>UI/UX Sistem Alumni Universitas</h4>
+              <p>Rancangan antarmuka dan pengalaman pengguna untuk platform pendataan alumni kampus.</p>
+              <a href="#" class="project-link">View Project <i class="ph ph-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="section-padding" id="experience">
+        <div class="section-header">
+          <h2>Experience</h2>
+          <p>Perjalanan karir dan pengalaman profesional saya</p>
+        </div>
+        
+        <div class="timeline">
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot"><i class="ph-fill ph-code"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Pengalaman</span>
+              <h4>Frontend & Backend Developer</h4>
+              <h5>Laravel</h5>
+              <p>Merancang dan mengembangkan fitur sisi antarmuka pengguna (Frontend) sekaligus logika sisi server (Backend) menggunakan framework PHP Laravel.</p>
+            </div>
+          </div>
+          
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot"><i class="ph-fill ph-books"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Pengalaman</span>
+              <h4>Admin Jurnal</h4>
+              <h5>OJS (Open Journal Systems)</h5>
+              <p>Mengelola dan mengadministrasi sistem publikasi jurnal akademik, menangani alur penerbitan dari submission hingga tayang.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot"><i class="ph-fill ph-trophy"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Penghargaan</span>
+              <h4>Finalis</h4>
+              <h5>Lomba Embedded System</h5>
+              <p>Berhasil mencapai tahap final pada kompetisi bergengsi di bidang rancang bangun Embedded System / IoT.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="section-padding" id="services">
+        <div class="section-header">
+          <h2>Services</h2>
+          <p>Layanan yang saya tawarkan untuk kebutuhan digital Anda</p>
+        </div>
+        
+        <div class="services-grid">
+          <div class="service-card animate-on-scroll">
+            <div class="service-icon"><i class="ph ph-code"></i></div>
+            <h4>Web Development</h4>
+            <p>Membangun website modern, cepat, dan responsif menggunakan teknologi terkini seperti React dan Tailwind/CSS.</p>
+          </div>
+          
+          <div class="service-card animate-on-scroll" style="animation-delay: 0.1s">
+            <div class="service-icon"><i class="ph ph-layout"></i></div>
+            <h4>UI/UX Design</h4>
+            <p>Merancang antarmuka pengguna yang intuitif, modern, dan memberikan pengalaman terbaik bagi pengguna (User Experience).</p>
+          </div>
+          
+          <div class="service-card animate-on-scroll" style="animation-delay: 0.2s">
+            <div class="service-icon"><i class="ph ph-chats"></i></div>
+            <h4>Consulting</h4>
+            <p>Sesi konsultasi profesional untuk merumuskan ide, strategi digital, dan solusi arsitektur aplikasi Anda.</p>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- Certificates -->
+      <section class="section-padding" id="certificates">
+        <div class="section-header">
+          <h2>Sertifikat</h2>
+          <p>Pencapaian dan sertifikasi yang telah saya peroleh</p>
+        </div>
+        
+        <div class="cert-grid">
+          <!-- Cert 1 -->
+          <div class="cert-card animate-on-scroll">
+            <div class="cert-img" onclick="openModal('img/Codingcamp.png')">
+              <img src="img/Codingcamp.png" alt="Coding Camp Intro to Software Engineering" onerror="this.src='https://placehold.co/600x400/ff5400/ffffff?text=Coding+Camp+Intro+to+Software+Engineering'">
+              <div class="cert-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+            </div>
+            <div class="cert-content">
+              <h4>1. Coding Camp Intro to Software Engineering</h4>
+            </div>
+          </div>
+          
+          <!-- Cert 2 -->
+          <div class="cert-card animate-on-scroll" style="animation-delay: 0.1s">
+            <div class="cert-img" onclick="openModal('img/EEA.png')">
+              <img src="img/EEA.png" alt="Sertifikat Peserta Programing Competition" onerror="this.src='https://placehold.co/600x400/ff5400/ffffff?text=Peserta+Programing+Competition'">
+              <div class="cert-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+            </div>
+            <div class="cert-content">
+              <h4>2. Sertifikat Peserta Programing Competition</h4>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card animate-on-scroll" style="animation-delay: 0.2s">
+            <div class="cert-img" onclick="openModal('img/Toefl.png')">
+              <img src="img/Toefl.png" alt="Sertifikat Central Course Toefl" onerror="this.src='https://placehold.co/600x400/ff5400/ffffff?text=Central+Course+Toefl'">
+              <div class="cert-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+            </div>
+            <div class="cert-content">
+              <h4>3. Sertifikat Central Course Toefl</h4>
+            </div>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="cert-card animate-on-scroll" style="animation-delay: 0.3s">
+            <div class="cert-img" onclick="openModal('img/MajuBarengAI.png')">
+              <img src="img/MajuBarengAI.png" alt="Sertifikat Maju Bareng AI" onerror="this.src='https://placehold.co/600x400/ff5400/ffffff?text=Maju+Bareng+AI'">
+              <div class="cert-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+            </div>
+            <div class="cert-content">
+              <h4>4. Sertifikat Maju Bareng AI</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section-padding" id="contact">
+        <div class="contact-wrapper animate-on-scroll">
+          <div class="contact-info">
+            <h2>Mari Berdiskusi!</h2>
+            <p>Punya ide luar biasa atau proyek yang butuh bantuan profesional? Jangan ragu untuk menghubungi saya. Saya selalu terbuka untuk peluang baru.</p>
+            
+            <div class="contact-methods">
+              <div class="method-item">
+                <div class="method-icon"><i class="ph ph-envelope-simple"></i></div>
+                <div>
+                  <span>Email</span>
+                  <strong>hengkykurniawan219@gmail.com</strong>
+                </div>
+              </div>
+              <div class="method-item">
+                <div class="method-icon"><i class="ph ph-phone"></i></div>
+                <div>
+                  <span>Telepon</span>
+                  <strong>+62 819-9413-9915</strong>
+                </div>
+              </div>
+              <div class="method-item">
+                <div class="method-icon"><i class="ph ph-map-pin"></i></div>
+                <div>
+                  <span>Lokasi</span>
+                  <strong>Lampung, Indonesia</strong>
+                </div>
+              </div>
+            </div>
+            
+            <div class="social-links">
+              <a href="#" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
+              <a href="#" aria-label="GitHub"><i class="ph-fill ph-github-logo"></i></a>
+              <a href="#" aria-label="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
+              <a href="#" aria-label="Twitter/X"><i class="ph-fill ph-x-logo"></i></a>
+            </div>
+          </div>
+          
+          <div class="contact-form-container">
+            <form id="contactForm" onsubmit="event.preventDefault();alert('Terima kasih! Pesan demo berhasil dikirim.')">
+              <div class="form-group">
+                <label for="name">Nama Lengkap</label>
+                <input type="text" id="name" placeholder="Masukkan nama Anda" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Alamat Email</label>
+                <input type="email" id="email" placeholder="email@contoh.com" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Pesan Anda</label>
+                <textarea id="message" rows="5" placeholder="Ceritakan tentang proyek atau ide Anda..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Kirim Pesan <i class="ph ph-paper-plane-right"></i></button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-content">
+          <p>© 2026 Hengky Kurniawan. Dibuat dengan <i class="ph-fill ph-heart" style="color: #ff4757;"></i> di Indonesia.</p>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Image Modal -->
+  <div id="imageModal" class="modal">
+    <span class="close-modal" onclick="closeModal()"><i class="ph ph-x"></i></span>
+    <img class="modal-content" id="modalImage" alt="Certificate Image">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
