@@ -176,4 +176,39 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  // Contact Form AJAX Logic using formsubmit.co
+  const contactForm = document.getElementById('contactForm');
+  if(contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const submitBtn = this.querySelector('button[type="submit"]');
+      const originalText = submitBtn.innerHTML;
+      submitBtn.innerHTML = 'Mengirim...';
+      submitBtn.disabled = true;
+
+      const formData = new FormData(this);
+      
+      fetch('https://formsubmit.co/ajax/hengkykurniawan219@gmail.com', {
+        method: 'POST',
+        headers: { 
+            'Accept': 'application/json'
+        },
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        alert('Pesan berhasil terkirim! Terima kasih.');
+        contactForm.reset();
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
+      })
+      .catch(error => {
+        alert('Maaf, terjadi kesalahan saat mengirim pesan. Pastikan Anda terhubung ke internet.');
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
+      });
+    });
+  }
 });

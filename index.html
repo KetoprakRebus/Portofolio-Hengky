@@ -414,26 +414,31 @@
             </div>
             
             <div class="social-links">
-              <a href="#" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
-              <a href="#" aria-label="GitHub"><i class="ph-fill ph-github-logo"></i></a>
-              <a href="#" aria-label="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
-              <a href="#" aria-label="Twitter/X"><i class="ph-fill ph-x-logo"></i></a>
+              <a href="https://www.linkedin.com/in/hengky-kurniawan-4704b2332/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
+              <a href="https://github.com/KetoprakRebus" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="ph-fill ph-github-logo"></i></a>
+              <a href="https://www.instagram.com/_hengkyyyy16?igsh=dXUwb3dtd3FoY3A4" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
+              <a href="https://x.com/Ayamgoyhengg99" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"><i class="ph-fill ph-x-logo"></i></a>
             </div>
           </div>
           
           <div class="contact-form-container">
-            <form id="contactForm" onsubmit="event.preventDefault();alert('Terima kasih! Pesan demo berhasil dikirim.')">
+            <form id="contactForm">
+              <!-- FormSubmit config -->
+              <input type="hidden" name="_subject" value="Pesan Baru dari Portofolio!">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_captcha" value="false">
+              
               <div class="form-group">
                 <label for="name">Nama Lengkap</label>
-                <input type="text" id="name" placeholder="Masukkan nama Anda" required />
+                <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required />
               </div>
               <div class="form-group">
                 <label for="email">Alamat Email</label>
-                <input type="email" id="email" placeholder="email@contoh.com" required />
+                <input type="email" id="email" name="email" placeholder="email@contoh.com" required />
               </div>
               <div class="form-group">
                 <label for="message">Pesan Anda</label>
-                <textarea id="message" rows="5" placeholder="Ceritakan tentang proyek atau ide Anda..." required></textarea>
+                <textarea id="message" name="message" rows="5" placeholder="Ceritakan tentang proyek atau ide Anda..." required></textarea>
               </div>
               <button type="submit" class="btn btn-primary btn-block">Kirim Pesan <i class="ph ph-paper-plane-right"></i></button>
             </form>
